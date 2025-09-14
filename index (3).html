@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addapt - AI-Powered Marketing Campaigns</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <h2>Addapt</h2>
+                    </div>
+                    <div class="nav-actions">
+                        <button id="language-toggle" class="btn btn--outline btn--sm" data-lang="en">
+                            <span class="lang-text">हिंदी</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-en="Create Marketing Campaigns with Natural Language" data-hi="प्राकृतिक भाषा के साथ मार्केटिंग अभियान बनाएं">
+                        Create Marketing Campaigns with Natural Language
+                    </h1>
+                    <p class="hero-subtitle" data-en="Simply describe your campaign goals in plain English or Hindi, and let our AI create optimized campaigns for you." data-hi="बस अपने अभियान के लक्ष्यों को साधारण अंग्रेजी या हिंदी में बताएं, और हमारे AI को आपके लिए अनुकूलित अभियान बनाने दें।">
+                        Simply describe your campaign goals in plain English or Hindi, and let our AI create optimized campaigns for you.
+                    </p>
+                    <button id="try-free-btn" class="btn btn--primary btn--lg" data-en="Try Addapt Free" data-hi="Addapt मुफ्त में आज़माएं">
+                        Try Addapt Free
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title" data-en="Why Choose Addapt?" data-hi="Addapt क्यों चुनें?">Why Choose Addapt?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3 data-en="AI-Powered" data-hi="AI-संचालित">AI-Powered</h3>
+                        <p data-en="Advanced natural language processing understands your campaign goals" data-hi="उन्नत प्राकृतिक भाषा प्रसंस्करण आपके अभियान के लक्ष्यों को समझता है">
+                            Advanced natural language processing understands your campaign goals
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 data-en="Real-time Analytics" data-hi="रियल-टाइम एनालिटिक्स">Real-time Analytics</h3>
+                        <p data-en="Track performance and optimize campaigns with live data insights" data-hi="लाइव डेटा अंतर्दृष्टि के साथ प्रदर्शन को ट्रैक करें और अभियानों को अनुकूलित करें">
+                            Track performance and optimize campaigns with live data insights
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3 data-en="Bilingual Support" data-hi="द्विभाषी समर्थन">Bilingual Support</h3>
+                        <p data-en="Create campaigns in English or Hindi with seamless translation" data-hi="निर्बाध अनुवाद के साथ अंग्रेजी या हिंदी में अभियान बनाएं">
+                            Create campaigns in English or Hindi with seamless translation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Campaign Setup Page -->
+    <div id="campaign-setup" class="page">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <button id="back-to-landing" class="btn btn--outline btn--sm" data-en="← Back" data-hi="← वापस">
+                        ← Back
+                    </button>
+                    <div class="logo">
+                        <h2>Addapt</h2>
+                    </div>
+                    <button id="language-toggle-setup" class="btn btn--outline btn--sm" data-lang="en">
+                        <span class="lang-text">हिंदी</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="setup-content">
+            <div class="container">
+                <div class="setup-header">
+                    <h1 data-en="Describe Your Campaign" data-hi="अपने अभियान का वर्णन करें">Describe Your Campaign</h1>
+                    <p data-en="Tell us about your marketing goals in natural language" data-hi="प्राकृतिक भाषा में हमें अपने मार्केटिंग लक्ष्यों के बारे में बताएं">
+                        Tell us about your marketing goals in natural language
+                    </p>
+                </div>
+
+                <div class="chat-interface">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message bot-message">
+                            <div class="message-content" data-en="Hi! I'm here to help you create your campaign. You can describe your needs like: 'Daily budget of 900 for 7 weeks' or 'Cafe in Mumbai, 500 rupees per day for 1 month'" data-hi="नमस्ते! मैं आपके अभियान बनाने में मदद करने के लिए यहाँ हूँ। आप अपनी आवश्यकताओं का वर्णन कर सकते हैं जैसे: '7 सप्ताह के लिए दैनिक बजट 900' या 'मुंबई में कैफे, 1 महीने के लिए प्रति दिन 500 रुपये'">
+                                Hi! I'm here to help you create your campaign. You can describe your needs like: "Daily budget of 900 for 7 weeks" or "Cafe in Mumbai, 500 rupees per day for 1 month"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <div class="chat-input-wrapper">
+                            <input type="text" 
+                                   id="chat-input" 
+                                   class="chat-input" 
+                                   placeholder="Describe your campaign..."
+                                   data-placeholder-en="Describe your campaign..."
+                                   data-placeholder-hi="अपने अभियान का वर्णन करें...">
+                            <button id="send-message" class="btn btn--primary">
+                                <span data-en="Send" data-hi="भेजें">Send</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Form (Initially Hidden) -->
+                <div id="campaign-form" class="campaign-form hidden">
+                    <div class="card">
+                        <div class="card__header">
+                            <h2 data-en="Review & Edit Campaign Details" data-hi="अभियान विवरण की समीक्षा और संपादन करें">Review & Edit Campaign Details</h2>
+                            <p data-en="Modify any details below before creating your campaign" data-hi="अपना अभियान बनाने से पहले नीचे दिए गए किसी भी विवरण को संशोधित करें">
+                                Modify any details below before creating your campaign
+                            </p>
+                        </div>
+                        <div class="card__body">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label" data-en="Campaign Name" data-hi="अभियान का नाम">Campaign Name</label>
+                                    <input type="text" id="campaign-name" class="form-control" value="My Campaign">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" data-en="Business Type" data-hi="व्यवसाय प्रकार">Business Type</label>
+                                    <input type="text" id="business-type" class="form-control" placeholder="e.g., Restaurant, Retail">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" data-en="Location" data-hi="स्थान">Location</label>
+                                    <input type="text" id="location" class="form-control" placeholder="e.g., Mumbai, Delhi">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" data-en="Daily Budget (₹)" data-hi="दैनिक बजट (₹)">Daily Budget (₹)</label>
+                                    <input type="number" id="daily-budget" class="form-control" min="1" value="500">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" data-en="Duration (Days)" data-hi="अवधि (दिन)">Duration (Days)</label>
+                                    <input type="number" id="duration" class="form-control" min="1" value="30">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" data-en="Total Budget" data-hi="कुल बजट">Total Budget</label>
+                                    <div id="total-budget" class="total-budget-display">₹15,000</div>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button id="create-campaign-btn" class="btn btn--primary btn--lg btn--full-width">
+                                    <span data-en="Create Campaign" data-hi="अभियान बनाएं">Create Campaign</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboard" class="page">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <h2>Addapt</h2>
+                    </div>
+                    <div class="nav-actions">
+                        <button id="new-campaign-btn" class="btn btn--primary btn--sm" data-en="New Campaign" data-hi="नया अभियान">
+                            New Campaign
+                        </button>
+                        <button id="language-toggle-dashboard" class="btn btn--outline btn--sm" data-lang="en">
+                            <span class="lang-text">हिंदी</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="dashboard-content">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h1 data-en="Campaign Dashboard" data-hi="अभियान डैशबोर्ड">Campaign Dashboard</h1>
+                    <p data-en="Monitor your campaign performance and analytics" data-hi="अपने अभियान के प्रदर्शन और एनालिटिक्स पर नज़र रखें">
+                        Monitor your campaign performance and analytics
+                    </p>
+                </div>
+
+                <div class="metrics-overview">
+                    <div class="metric-card">
+                        <h3 data-en="Active Campaigns" data-hi="सक्रिय अभियान">Active Campaigns</h3>
+                        <div class="metric-value" id="active-campaigns">0</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3 data-en="Total Spend" data-hi="कुल खर्च">Total Spend</h3>
+                        <div class="metric-value" id="total-spend">₹0</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3 data-en="Impressions" data-hi="इंप्रेशन">Impressions</h3>
+                        <div class="metric-value" id="total-impressions">0</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3 data-en="Click Rate" data-hi="क्लिक दर">Click Rate</h3>
+                        <div class="metric-value" id="click-rate">0%</div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="chart-section">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3 data-en="Campaign Performance" data-hi="अभियान प्रदर्शन">Campaign Performance</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="chart-container" style="position: relative; height: 300px;">
+                                    <canvas id="performance-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="campaigns-list">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3 data-en="Your Campaigns" data-hi="आपके अभियान">Your Campaigns</h3>
+                            </div>
+                            <div class="card__body">
+                                <div id="campaigns-container">
+                                    <div class="empty-state" data-en="No campaigns yet. Create your first campaign!" data-hi="अभी तक कोई अभियान नहीं। अपना पहला अभियान बनाएं!">
+                                        No campaigns yet. Create your first campaign!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chatbot Section -->
+                <div class="chatbot-section">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3 data-en="Analytics Assistant" data-hi="एनालिटिक्स सहायक">Analytics Assistant</h3>
+                            <p data-en="Ask questions about your campaign metrics" data-hi="अपने अभियान मेट्रिक्स के बारे में प्रश्न पूछें">
+                                Ask questions about your campaign metrics
+                            </p>
+                        </div>
+                        <div class="card__body">
+                            <div class="chatbot-messages" id="chatbot-messages">
+                                <div class="message bot-message">
+                                    <div class="message-content" data-en="Hello! I can help you understand your campaign metrics. Try asking: 'How many campaigns do I have?' or 'What's my total spend?'" data-hi="नमस्ते! मैं आपके अभियान मेट्रिक्स को समझने में मदद कर सकता हूँ। पूछने की कोशिश करें: 'मेरे पास कितने अभियान हैं?' या 'मेरा कुल खर्च क्या है?'">
+                                        Hello! I can help you understand your campaign metrics. Try asking: "How many campaigns do I have?" or "What's my total spend?"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatbot-input-container">
+                                <div class="chat-input-wrapper">
+                                    <input type="text" 
+                                           id="chatbot-input" 
+                                           class="chat-input" 
+                                           placeholder="Ask about your metrics..."
+                                           data-placeholder-en="Ask about your metrics..."
+                                           data-placeholder-hi="अपने मेट्रिक्स के बारे में पूछें...">
+                                    <button id="send-chatbot-message" class="btn btn--primary">
+                                        <span data-en="Send" data-hi="भेजें">Send</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
